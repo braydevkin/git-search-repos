@@ -1,0 +1,115 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f0f0ff;
+}
+li{
+  margin: auto;
+  margin-bottom: 10px;
+  list-style: none;
+  margin-left: -40px;
+  text-align: left;
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 8px;
+  align-items: left;
+}
+ul{
+  margin: 0;
+}
+#settings{
+  background: #fff;
+  border-radius: 8px;
+  width: 90%;
+  padding: 25px;
+  margin: auto;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+#user{
+  width: 80%;
+  max-width: 300px;
+  padding: 5px;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  align-items: center;
+}
+#btnStyle{
+  border: none;
+  height: 35px;
+  background: #555;
+  color: white;
+  font-size: 10pt;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+#btnStyle:hover{
+  background: #333;
+}
+#panel{
+  display: grid;
+  background: #fff;
+  border-radius: 8px;
+  margin: auto;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100vh 100vh;
+}
+#left{
+  background: purple;
+  padding: 5px;
+  align-items: flex-start;
+}
+#right{
+background: yellow;
+align-items: flex-start;
+padding: 5px;
+}
+.repos{
+  background: #fff;
+  padding-inline-start: 10px;
+}
+.repos button{
+  border-radius: 12px;
+  background: #555;
+  padding: 8px;
+  border: none;
+  color: white;
+  font-size: 8pt;
+  transition: 0.5s
+}
+.repos button:hover{
+  background: #333;
+}
+.titlemodel{
+  font-size: 14pt;
+  text-align: left;
+  text-decoration: none;
+  padding: 8px;
+  color: rgb(30, 30, 252);
+}
+#spinner{
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #555;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+@keyframes spin {
+  to {transform: rotate(360deg);}
+}
+#conteiner-load{
+  margin: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  visibility: hidden;
+}

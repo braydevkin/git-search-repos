@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Challenge MFour</title>
+</head>
+
+<body>
+  <div id="grid">
+    <aside id="left">
+      <div id="settings">
+        <p><input type="text" name="user" id="user" placeholder="Digite seu nome de usuário do GitHub"></p>
+        <input type="button" value="Buscar" onclick="btnAdd()" id="btnStyle">
+      </div>
+    </aside>
+
+    <aside id="right">
+
+      <div id="panel">
+        <div id="conteiner-load">
+          <div id="spinner"></div>
+          <p>Buscando repositórios...</p>
+        </div>
+      </div>
+    </aside>
+
+
+
+  </div>
+
+
+
+
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</body>
+<script src="main.js"></script>
+
+</html>
